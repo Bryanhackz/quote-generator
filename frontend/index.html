@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{TITLE}}</title>
+    <meta name="description" content="{{DESCRIPTION}}">
+    <link rel="stylesheet" href="/css/tokens.css">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <script type="module" src="/js/main.js"></script>
+</head>
+<body>
+    <nav class="top-nav">
+        <div class="brand"><div class="brand-dot"></div>Acme Digital</div>
+    </nav>
+
+    <main class="container">
+        <header class="page-header">
+            <h1>Project Estimator</h1>
+            <p>Select the services your business needs. Get an instant, transparent quote.</p>
+        </header>
+
+        <div class="grid-layout">
+            <section aria-labelledby="services-title">
+                <h2 id="services-title" style="display: none;">Services</h2>
+                <div class="services-list">
+                    
+                    <label class="service-card" for="srv-landing">
+                        <input type="checkbox" id="srv-landing" value="Landing Page Design" data-price="500">
+                        <div class="service-content">
+                            <div class="service-title">
+                                <span>Landing Page Design</span>
+                                <span class="service-price">$500</span>
+                            </div>
+                            <p class="service-desc">Conversion-optimized, responsive single-page website.</p>
+                        </div>
+                    </label>
+
+                    <label class="service-card" for="srv-ecommerce">
+                        <input type="checkbox" id="srv-ecommerce" value="E-Commerce Store" data-price="1200">
+                        <div class="service-content">
+                            <div class="service-title">
+                                <span>E-Commerce Store</span>
+                                <span class="service-price">$1,200</span>
+                            </div>
+                            <p class="service-desc">Full product catalog, cart, and secure checkout.</p>
+                        </div>
+                    </label>
+
+                    <label class="service-card" for="srv-seo">
+                        <input type="checkbox" id="srv-seo" value="SEO Technical Audit" data-price="300">
+                        <div class="service-content">
+                            <div class="service-title">
+                                <span>SEO Technical Audit</span>
+                                <span class="service-price">$300</span>
+                            </div>
+                            <p class="service-desc">Performance, accessibility, and ranking analysis.</p>
+                        </div>
+                    </label>
+
+                    <label class="service-card" for="srv-maintenance">
+                        <input type="checkbox" id="srv-maintenance" value="Monthly Maintenance" data-price="100">
+                        <div class="service-content">
+                            <div class="service-title">
+                                <span>Monthly Maintenance</span>
+                                <span class="service-price">$100</span>
+                            </div>
+                            <p class="service-desc">Hosting management, updates, and daily backups.</p>
+                        </div>
+                    </label>
+
+                </div>
+            </section>
+
+            <aside class="summary-card" aria-labelledby="summary-title">
+                <h2 id="summary-title">Quote Summary</h2>
+                <ul id="summary-list" class="summary-list">
+                    <li class="summary-item" style="justify-content: center; color: var(--text-secondary); font-style: italic;">No services selected</li>
+                </ul>
+                <div class="summary-item total">
+                    <span>Total Estimate:</span>
+                    <span id="total-price">$0</span>
+                </div>
+                <button id="btn-generate" class="btn-primary" disabled>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    Request Quote via Email
+                </button>
+            </aside>
+        </div>
+    </main>
+</body>
+</html>
